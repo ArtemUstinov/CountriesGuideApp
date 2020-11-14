@@ -1,0 +1,39 @@
+PODS:
+  - CocoaLumberjack (3.7.0):
+    - CocoaLumberjack/Core (= 3.7.0)
+  - CocoaLumberjack/Core (3.7.0)
+  - Spring (1.0.6)
+  - SVGKit (2.1.0):
+    - CocoaLumberjack (~> 3.0)
+
+DEPENDENCIES:
+  - Spring (from `https://github.com/LexDeBash/Spring.git`)
+  - SVGKit (from `https://github.com/SVGKit/SVGKit.git`, branch `3.x`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+
+EXTERNAL SOURCES:
+  Spring:
+    :git: https://github.com/LexDeBash/Spring.git
+  SVGKit:
+    :branch: 3.x
+    :git: https://github.com/SVGKit/SVGKit.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: b3bcc7d08cba7766c8b6ac161fee86349b8f6567
+    :git: https://github.com/LexDeBash/Spring.git
+  SVGKit:
+    :commit: 9d7e741095664d795d25b311fcd15c87efb4baf4
+    :git: https://github.com/SVGKit/SVGKit.git
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
+  SVGKit: 132b010efbf57ec345309fe4a7f627c0a40c5d63
+
+PODFILE CHECKSUM: 1219a734cc8e0856676ad5f174e3edd59e5dc32c
+
+COCOAPODS: 1.9.3
