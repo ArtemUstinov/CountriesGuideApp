@@ -39,20 +39,20 @@ class InfoViewController: UIViewController {
     //MARK: - Private methods:
     private func setLabels() {
         
-        nameLabel.text = "Country: \(countryModel.name ?? "")"
-        capitalLabel.text = "Capital: \(countryModel.capital ?? "")"
-        regionLabel.text = "Region: \(countryModel.region ?? "")"
+        nameLabel.text = "Country:  \(countryModel.name ?? "")"
+        capitalLabel.text = "Capital:  \(countryModel.capital ?? "")"
+        regionLabel.text = "Region:  \(countryModel.region ?? "")"
         
-        populationLabel.text = "Population: \(countryModel.population ?? 0)"
+        populationLabel.text = "Population:  \(countryModel.population ?? 0)"
         
         for language in countryModel.languages {
-            languageLabel.text = "Language: \(language.name ?? "")"
+            languageLabel.text = "Language:  \(language.name ?? "")"
         }
         
         for currencie in countryModel.currencies {
-            codeLabel.text = "Code: \(currencie.code ?? "")"
-            nameCodeLabel.text = "Name of money: \(currencie.name ?? "")"
-            symbolLabel.text = "Symbol of money: \(currencie.symbol ?? "")"
+            codeLabel.text = "Code:  \(currencie.code ?? "")"
+            nameCodeLabel.text = "Name of money:  \(currencie.name ?? "")"
+            symbolLabel.text = "Symbol of money:  \(currencie.symbol ?? "")"
         }
     }
     
@@ -60,7 +60,7 @@ class InfoViewController: UIViewController {
         
         guard let urlString = countryModel.flag else { return }
         guard let url = URL(string: urlString) else { return }
-        guard let convertToJpg = SVGKImage(contentsOf: url) else { return }
-        flagImage.image = convertToJpg.uiImage
+        guard let convertFromSvgToJpg = SVGKImage(contentsOf: url) else { return }
+        flagImage.image = convertFromSvgToJpg.uiImage
     }
 }

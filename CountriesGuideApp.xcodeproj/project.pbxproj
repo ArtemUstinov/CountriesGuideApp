@@ -98,8 +98,7 @@
 				AC2AD32C255FDEFB00B9B2A3 /* View */,
 				AC2AD329255FDEA300B9B2A3 /* Controllers */,
 				AC2AD33A256039FF00B9B2A3 /* Extensions */,
-				AC2AD31E255FDB0F00B9B2A3 /* Assets.xcassets */,
-				AC2AD323255FDB0F00B9B2A3 /* Info.plist */,
+				AC77A82625612C0E00E3A003 /* Configuration files */,
 			);
 			path = CountriesGuideApp;
 			sourceTree = "<group>";
@@ -117,9 +116,9 @@
 		AC2AD32C255FDEFB00B9B2A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC2AD32D255FDF1500B9B2A3 /* CountryViewCell.swift */,
 				AC2AD31B255FDB0B00B9B2A3 /* Main.storyboard */,
 				AC2AD320255FDB0F00B9B2A3 /* LaunchScreen.storyboard */,
+				AC2AD32D255FDF1500B9B2A3 /* CountryViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +154,15 @@
 				AC2AD33B25603A1C00B9B2A3 /* Extension + InfoViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC77A82625612C0E00E3A003 /* Configuration files */ = {
+			isa = PBXGroup;
+			children = (
+				AC2AD31E255FDB0F00B9B2A3 /* Assets.xcassets */,
+				AC2AD323255FDB0F00B9B2A3 /* Info.plist */,
+			);
+			path = "Configuration files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,7 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CountriesGuideApp/Info.plist;
+				INFOPLIST_FILE = "CountriesGuideApp/Configuration files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CountriesGuideApp/Info.plist;
+				INFOPLIST_FILE = "CountriesGuideApp/Configuration files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
